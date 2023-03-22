@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+
+  width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.button {
+  padding: 8px 16px;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.start-button {
+  color: #ffffff;
+
+  background-color: #76d8a3;
+}
+
+.start-button:hover {
+  background-color: #2dc071;
+}
+
+.stop-button {
+  color: #ffffff;
+
+  background-color: #faa0a0;
+}
+
+.stop-button:hover {
+  background-color: #e0232e;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 4px;
+
+  background-color: lightgray;
+  border-radius: 2px;
+}
+
+.progress-bar__current {
+  width: 0;
+  height: 4px;
+
+  background-color: lightcoral;
+  border-radius: 2px;
+
+  transition: width 0.5s ease;
+}
